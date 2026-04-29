@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .ticket-print,
+  .ticket-print * {
+    visibility: visible !important;
+  }
+
+  .ticket-print {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+  }
+}
